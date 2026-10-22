@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="hy">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Textile House</title>
+  <meta name="description" content="Textile House — անկողնային պարագաներ անմիջապես արտադրողից։ Առաքում ամբողջ Հայաստանով։">
+  <meta name="theme-color" content="#0d0c0b">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-512.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Textile House">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=Noto+Sans+Armenian:wght@300;400;500;600;700&family=Noto+Serif+Armenian:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-inner">
+      <div class="intro-mark" data-logo></div>
+      <div class="intro-word"><span>Textile House</span></div>
+      <div class="intro-line"></div>
+    </div>
+  </div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <a href="#/" class="brand" aria-label="Textile House">
+      <span class="brand-mark" data-logo></span>
+      <span class="brand-text">
+        <span class="brand-name">Textile House</span>
+        <span class="brand-sub" data-i18n="brandSub"></span>
+      </span>
+    </a>
+    <nav class="desk-nav" id="deskNav"></nav>
+    <div class="top-actions">
+      <div class="lang" id="langSwitch" role="group" aria-label="Language"></div>
+      <a href="#/compare" class="icon-btn desk-only" aria-label="Compare">
+        <svg viewBox="0 0 24 24"><path d="M8 3v18M16 3v18"/><path d="M4 7l4-4 4 4M12 17l4 4 4-4"/></svg>
+        <span class="badge" data-compare-count hidden>0</span>
+      </a>
+      <a href="#/favorites" class="icon-btn desk-only" aria-label="Favorites">
+        <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>
+        <span class="badge" data-fav-count hidden>0</span>
+      </a>
+      <a href="#/cart" class="icon-btn desk-only" aria-label="Cart">
+        <svg viewBox="0 0 24 24"><path d="M6 7h12l-1.2 11.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 7Z"/><path d="M9 7V6a3 3 0 0 1 6 0v1"/></svg>
+        <span class="badge" data-cart-count hidden>0</span>
+      </a>
+    </div>
+    <div class="mega" id="mega"></div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <nav class="tabbar" id="tabbar"></nav>
+
+  <div class="cmp-bar" id="cmpBar" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="story" id="story" hidden></div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/photos.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/compare.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/info.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
